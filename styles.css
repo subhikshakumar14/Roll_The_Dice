@@ -1,0 +1,62 @@
+.container {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.dice {
+  text-align: center;
+  display: inline-block;
+
+}
+
+body {
+  background-image: url('images/dice_game.jpg'); 
+  background-color: #393E46;
+}
+
+h1 {
+  margin: 30px;
+  font-family: 'Lobster', cursive;
+  text-shadow: 5px 0 #232931;
+  font-size: 8rem;
+  color: #9edb26;
+  opacity: 0.9;
+}
+.dice-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px; /* space between dice */
+}
+
+p {
+  font-size: 2rem;
+  color: #12230b;
+  font-family: 'Lobster', cursive;
+}
+
+img {
+  width: 80%;
+}
+@keyframes shake {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-18px) rotate(-8deg);}
+  40% { transform: translateX(14px) rotate(8deg);}
+  60% { transform: translateX(-10px) rotate(-6deg);}
+  80% { transform: translateX(6px) rotate(6deg);}
+  100% { transform: translateX(0); }
+}
+
+.dice.shake img {
+  animation: shake 0.5s cubic-bezier(.36,.07,.19,.97);
+}
+
+footer {
+  margin-top: 5%;
+  font-size: larger;
+  color: #161b19;
+  text-align: center;
+  font-family: 'lobster', cursive;
+
+}
